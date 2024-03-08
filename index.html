@@ -29,6 +29,7 @@
 
   <textarea id="inputText" rows="10" cols="50"></textarea><br>
   <button id="formatButton">Format SQL Values</button>
+<!--  <button id="testButton">Test Splitter</button>-->
   <h2>Formatted SQL Output</h2>
   <pre id="outputText"></pre>
 
@@ -38,6 +39,12 @@
       const formattedSQL = formatSQLValues(inputText);
       document.getElementById('outputText').textContent = formattedSQL;
     });
+
+    // document.getElementById('testButton').addEventListener('click', function() {
+    //   const inputText = document.getElementById('inputText').value;
+    //   const formattedSQL = testSplit(inputText);
+    //   document.getElementById('outputText').textContent = formattedSQL;
+    // });
   </script>
 </body>
 
